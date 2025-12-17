@@ -1,50 +1,12 @@
-# Project Name
+Vào mysql, tạo một database (chỉ cần tạo là đủ)
+Vào \demo\src\main\resources\application.properties (project) sửa các phần như hình (tên database, username và password mysql):
+![App screenshot](databaseconfig.png)
 
-Short one-liner about what this project does.
+Khởi chạy backend: vào thư mục demo, chạy lệnh: ./mvnw.cmd spring-boot:run
+Khởi chạy frontend: vào thư mục fe, chạy lệnh: npm install, sau đó npm run dev
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
+Chạy các lệnh insert (data mẫu) bằng mysql (trong file sql.txt)
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Run](#run)
-- [Configuration](#configuration)
-- [API / Usage](#api--usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+Truy cập trang login: http://localhost:3000/
 
-## About
-Explain the problem your project solves and who it is for.
-
-Example:
-This is a simple web app that lets users create tasks, mark them as completed, and filter by status.
-
-## Features
-- ✅ Create / update / delete items
-- 🔎 Search and filter
-- 🔐 Auth (optional)
-- 📦 REST API (optional)
-
-## Tech Stack
-- Frontend: React + TypeScript (or Next.js)
-- Backend: Node.js / Spring Boot / Django
-- Database: PostgreSQL / MySQL
-- Tools: Docker, GitHub Actions, etc.
-
-## Getting Started
-
-### Requirements
-- Node.js >= 18 (or Java 17, Python 3.11, etc.)
-- Git
-- (Optional) Docker
-
-### Installation
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+Vì chưa có trang đăng kí (front end), nên tạm thời đăng kí bằng cách gửi post request đến backend bằng postman
